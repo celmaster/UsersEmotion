@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <!-- @Head -->
+        <title>BUSS - Sistema de gerenciamento</title>
+        <meta charset="utf-8">
+        <!-- css scripts -->
+        <!-- @css name=systemStyle /css-->
+        <link rel="stylesheet" type="text/css" href="css/systemStyle.css">		
+        <!-- js scripts -->
+        <!-- @js name=systemLibrary /js-->
+        <script src="js/systemLibrary.js" type="text/javascript"></script>
+        <!-- /@Head -->
+    </head>
+    <body>
+        <!-- @Structure -->
+        <div class="scenery" id="scenery">
+            <div class="header">
+                <!-- @Header -->
+                <!-- @Content Grid -->
+                <!-- @Grid name=bussTitleSystem@-->
+                <div class="bussTitle title3 whiteTitle left">
+                    BUSS
+                </div>
+                <!-- /@Content Grid -->
+                <!-- @Content Grid -->
+                <!-- @Grid name=logoutGrid@-->
+                <div class="right logout">
+                    <form class="formStyle2" id="logoutForm" method="post">
+                        <input type="button" value="Logout" onclick="makeLogout('logoutForm')">
+                    </form>
+                </div>
+                <!-- /@Content Grid -->
+            </div>            
+            <div class="content">
+                <!-- @Content -->
+                <!-- @Content Grid -->
+                <!-- @Grid name=contentBlock@-->
+                <div class="contentBlock card">
+                    <!-- @ContentBlock -->
+                    <!-- @Content SubGrid -->
+                    <!-- @Grid name=bussLoginForm@-->
+                    <form class="formStyle1" id="loginForm" method="post">
+                        <p class="title2 whiteTitle">
+                            E-Mail:
+                            <br><input type="text" id="email" name="email" placeholder="Informe seu e-mail de login aqui">
+                        </p>
+                        <p class="title2 whiteTitle">
+                            Senha:
+                            <br><input type="password" id="senha" name="senha" placeholder="Insira sua senha para login aqui">
+                        </p>
+                        <p>
+                            <input type="button" value="Log in" onclick="makeLogin('loginForm')">
+                        </p>
+                    </form>
+                    <!-- /@Content SubGrid -->
+                </div>
+                <!-- /@Content Grid -->
+                <div>
+                </div>
+            </div>			
+        </div>
+        <!-- /@Structure -->
+    </body>
+</html>

@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <!-- @Head -->
+        <title>BUSS Template web</title>
+        <meta charset="utf-8">
+        <!-- css scripts -->
+        <!-- @css name=style /css-->
+        <link rel="stylesheet" type="text/css" href="css/style.css">		
+        <!-- js scripts -->
+        <!-- @js name=library /js-->
+        <script src="js/library.js" type="text/javascript"></script>
+        <!-- /@Head -->
+    </head>
+    <body>
+        <!-- @Structure -->
+        <div class="scenery" id="scenery">
+            <div class="header">
+                <div class="bussTitleBlock title3 whiteTitle">
+                    BUSS
+                </div>
+                <div class="clockBlock title3 whiteTitle" id="clockBlock">&nbsp;</div>
+            </div>            
+            <div class="content">
+                <!-- @Content -->
+                <!-- @Content Grid -->
+                <!-- @Grid name=newsTitle@-->
+                <div class="newsTitle title2 whiteTitle">
+                    <!--@var name=title@-->					
+                </div>
+                <!-- /@Content Grid -->
+                <!-- @Content Grid -->
+                <!-- @Grid name=scheduleTitle@-->
+                <div class="scheduleTitle title2 whiteTitle">
+                    <!--@var name=title@-->					
+                </div>
+                <!-- /@Content Grid -->
+                <!-- @Content Grid -->
+                <!-- @Grid name=news@-->
+                <div class="news">
+                    <!-- @News -->
+                    <!-- @Content SubGrid -->
+                    <!-- @Grid name=newsBlock@-->
+                    <div class="grid card <!--@var name=class@-->" style="background-image:url('<!--@var name=imageURI@-->')">						
+                        <div class="gridDescribe">
+                            <div class="describe">
+                                <!--@var name=describe@-->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /@Content SubGrid -->		
+                </div> 
+                <!-- /@Content Grid -->
+                <!-- @Content Grid -->
+                <!-- @Grid name=schedule@-->				
+                <div class="schedule">
+                    <div class="scheduleContent">
+                        <!-- @Schedule -->
+                        <!-- @Content SubGrid -->
+                        <!-- @Grid name=busSchedule@-->
+                        <table class="simpleTable">						   
+                            <tr class="tLine">
+                                <td class="thead2">
+                                    Linha
+                                </td> 
+                                <td class="thead2">
+                                    Origem X Destino
+                                </td> 
+                                <td class="thead2">
+                                    Horário
+                                </td> 
+                                <td class="thead2">
+                                    Tempo restante:
+                                </td> 
+                            </tr>
+                            <tr>
+                                <td>
+                                    01
+                                </td> 
+                                <td>
+                                    Pacaembu x UFScar (Área Sul) - Via Bela Vista
+                                </td> 
+                                <td>
+                                    19:00:00					 
+                                </td> 
+                                <td>
+                                    <span class="timeBus" id="linha01"></span>
+                                </td> 
+                            </tr>
+                            <tr>
+                                <td>
+                                    02
+                                </td> 
+                                <td>
+                                    Vila Prado x UFScar (Área Norte) - Via Praça Itália
+                                </td> 
+                                <td>
+                                    22:15:00					 
+                                </td> 
+                                <td>
+                                    <span class="timeBus" id="linha02"></span>
+                                </td> 
+                            </tr>
+                            <tr>
+                                <td>
+                                    03
+                                </td> 
+                                <td>
+                                    Vila Prado x UFScar (Área Norte) - Via Praça Itália
+                                </td> 
+                                <td>
+                                    23:30:00					 
+                                </td> 
+                                <td>
+                                    <span class="timeBus" id="linha03"></span>
+                                </td> 
+                            </tr>
+                            <tr>
+                                <td>
+                                    04
+                                </td> 
+                                <td>
+                                    Castelo Branco x UFScar (Área Sul) - Via Vila Monteiro
+                                </td> 
+                                <td>
+                                    07:30:00					 
+                                </td> 
+                                <td>
+                                    <span class="timeBus" id="linha04"></span>
+                                </td> 
+                            </tr>
+                        </table>
+                        <!-- /@Content SubGrid -->
+                    </div>
+                </div>			    
+                <!-- /@Content Grid -->
+            </div>			
+        </div>	
+        <!-- @Accessibility -->		
+        <!-- @Content Grid -->
+        <!-- @Grid name=accessibilityLibras@-->
+        <div class="libras"></div>
+        <!-- /@Content Grid -->
+        <!-- /@Structure -->
+    </body>
+</html>
